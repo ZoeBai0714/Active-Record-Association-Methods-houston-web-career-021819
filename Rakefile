@@ -8,3 +8,9 @@ require 'sinatra/activerecord/rake'
 task :console do
   Pry.start
 end
+
+=begin
+  hello = Song.create(name: "Hello")
+  adele = Artist.create(name: "Adele")   not capitalised??? Adele
+  hello.artist = adele   not "Adele"???
+=end
